@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Studienberatung {
 	
-	public void main(){
+	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Hast du Abitur?");
 		
@@ -16,6 +16,9 @@ public class Studienberatung {
 			answer = scanner.next();
 			
 			if(answer.equalsIgnoreCase("n")){
+				System.out.println("Nicht studieren.");
+		
+			}else{
 				System.out.println("Hast du eine Berufsausbildung?");
 				answer = scanner.next();
 					
@@ -24,9 +27,6 @@ public class Studienberatung {
 				}else{
 					System.out.println("Du kannst ja später noch studieren.");
 				}
-				
-			}else{
-				System.out.println("Nicht studieren.");
 			}
 			
 		}else{
